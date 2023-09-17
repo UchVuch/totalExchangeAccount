@@ -1,0 +1,480 @@
+:root {
+	--primary: linear-gradient(97.87deg, #192f6c 9.67%, #0b1e4a 87.8%);
+	--primary-active: linear-gradient(97.87deg, #5675c9 9.67%, #4a69b0 87.8%);
+	--accent: linear-gradient(272.65deg, #950b12 2.78%, #e2373f 102.26%);
+	--text: #000000;
+	--white-text: #ffffff;
+	--bg: #ffffff;
+	--bg-bottom: linear-gradient(180deg, rgba(225, 233, 255, 0) 0%, #d4daeb 100%);
+	--container-width: 1231px;
+	--container-padding: 30px;
+}
+
+/* Global */
+
+/*validation*/
+.form__label {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.just-validate-error-label {
+	margin-bottom: 8px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: var(--text);
+	min-width: 280px;
+	background-color: var(--bg);
+	position: relative;
+	overflow-x: hidden;
+}
+
+.body--lock {
+	overflow: hidden;
+}
+
+.animate-fade-start {
+	opacity: 0;
+	transition: opacity ease-in 0.6s;
+}
+
+.animate-fade-show {
+	opacity: 1;
+}
+
+.animate-fade-first {
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-fill-mode: forwards;
+	animation-name: fadeIn;
+	animation-timing-function: ease-in;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.first-section-delay,
+.second-section-delay {
+	-webkit-animation-delay: 1.1s;
+	animation-delay: 1.1s;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper-bg::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 2820px;
+	background: linear-gradient(180deg, rgba(225, 233, 255, 0) 0%, #d4daeb 100%);
+}
+
+.main {
+	position: relative;
+	flex: 1 1 auto;
+}
+
+.bg-blur-image {
+	position: relative;
+}
+
+.bg-blur-image::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: -150px;
+	width: 1538px;
+	height: 956px;
+	background-image: url(../images/main-bg-blur.png);
+	background-repeat: no-repeat;
+}
+
+.decor-bg-2,
+.decor-bg-3,
+.bg-logo {
+	position: absolute;
+	z-index: -1;
+}
+
+.bg-logo {
+	top: 65px;
+	left: 15%;
+}
+
+.bg-city {
+	position: absolute;
+	bottom: 58px;
+	/* left: 50%;
+	transform: translateX(-50%); */
+}
+
+.bg-map__left,
+.bg-map__right {
+	position: absolute;
+}
+
+.bg-map__left {
+	left: -737px;
+}
+
+.bg-map__right {
+	top: 30px;
+	right: -640px;
+}
+
+.decor-bg-2 {
+	top: -200px;
+	right: -548px;
+}
+
+.decor-bg-3 {
+	top: -150px;
+	left: -350px;
+}
+
+.decor-bg-2-mob,
+.decor-bg-3-mob {
+	display: none;
+}
+
+.container {
+	max-width: var(--container-width);
+	width: 100%;
+	padding: 0 var(--container-padding);
+	margin: 0 auto;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.button {
+	border: none;
+	border-radius: 15px;
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: var(--white-text);
+	padding: 12px 50px 13px;
+}
+
+.footer {
+	color: var(--white-text);
+	background: radial-gradient(671.44% 97.28% at 49.91% 40.25%, #192F6C 0%, #041640 100%);
+	padding-block: 70px 36px;
+}
+
+.footer__copyright {
+	text-align: center;
+	padding-block: 40px 10px;
+}
+
+.page-register2 .footer {
+	background: #DBE4FF;
+}
+
+.page-register2 .footer__copyright {
+	background: radial-gradient(671.44% 97.28% at 49.91% 40.25%, #192F6C 0%, #041640 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.register {
+	padding-block: 34px 45px;
+}
+
+.reg-title {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	background: radial-gradient(671.44% 97.28% at 49.91% 40.25%, #192F6C 0%, #041640 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 25px;
+}
+
+.logo {
+	display: block;
+	width: 283px;
+	height: 43px;
+	margin: 0 auto 31px;
+}
+
+.recovery-link {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 500;
+	line-height: normal;
+	width: 100%;
+	margin-bottom: 87px;
+}
+
+.recovery-link a {
+	color: rgba(80, 78, 172, 0.60);
+}
+
+.recovery-link a:hover {
+	text-decoration: underline;
+}
+
+.required-field {
+	color: #D81515;
+	text-align: right;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.reg-hint {
+	position: relative;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: 10px;
+}
+
+.reg-hint::before {
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	content: '';
+	display: block;
+	border-radius: 17px;
+	width: 17px;
+	height: 17px;
+	background-color: rgba(134, 124, 252, 0.60);
+}
+
+.reg-form {
+	max-width: 542px;
+	width: 100%;
+	border-radius: 30px;
+	background: rgba(239, 241, 255, 0.65);
+	backdrop-filter: blur(16.5px);
+	margin: 0 auto;
+	padding: 59px 56px 40px;
+}
+
+.reg-label {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	margin-bottom: 17px;
+}
+
+.reg-input_title {
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.reg-form .itc-select__option,
+.reg-input {
+	border-radius: 7.987px;
+	border: none;
+	max-width: 430px;
+	width: 100%;
+	height: 51px;
+	flex-shrink: 0;
+	background: linear-gradient(273deg, #FFF 2.78%, #FFF 102.26%);
+	backdrop-filter: blur(4.4375px);
+	padding: 15px 19px 16px;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+}
+
+.reg-form .itc-select__option:hover {
+	background: #f5f5f5;
+	cursor: pointer;
+	transition: 0.2s background ease-in-out;
+}
+
+.register__form-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 28px;
+}
+
+.register__form-button {
+	color: #FFF;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	width: 100%;
+}
+
+.button-next {
+	border: none;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	padding-block: 18px;
+	border-radius: 15px;
+	background: linear-gradient(273deg, #950B12 2.78%, #E2373F 102.26%);
+	transition: background 0.3s ease;
+}
+
+.button-next:hover {
+	background: linear-gradient(273deg, #c40f18 2.78%, #fa3c46 102.26%);
+	transition: background 0.3s ease;
+}
+
+.register__form-link {
+	color: #FFF;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 15px;
+	width: 45%;
+	background: linear-gradient(273deg, #173482 2.78%, #11265C 102.26%);
+	padding: 10px 17px 9px 17px;
+	transition: background 0.3s ease;
+}
+
+.register__form-link:hover {
+	background: linear-gradient(273deg, #1f46b1 2.78%, #1c3e92 102.26%);
+	transition: background 0.3s ease;
+}
+
+.register__form-link:not(:last-child) {
+	margin-right: 35px;
+}
+
+.reg-input:hover {
+	background-color: #f5f5f5;
+	cursor: pointer;
+	transition: 0.2s background-color ease-in-out;
+}
+
+.login-form {
+	margin-top: 120px;
+}
+
+.login__label-inner {
+	position: relative;
+}
+
+.login__icon {
+	position: absolute;
+	z-index: 1;
+	top: 15px;
+	left: 15px;
+}
+
+.login__input {
+	border: none;
+	border-radius: 7.987px;
+	background: rgba(141, 187, 255, 0.21);
+	backdrop-filter: blur(4.4375px);
+	width: 100%;
+	padding: 15px 15px 15px 50px;
+	margin-bottom: 15px;
+}
+
+.login__input,
+.login__input::placeholder {
+	color: #5675C9;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.button-request {
+	border: none;
+	border-radius: 15px;
+	background: linear-gradient(273deg, #950B12 2.78%, #E2373F 102.26%);
+	padding-block: 14px;
+	margin-bottom: 73px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Euro Exchange's dedicated support team. We're here to
+  assist you with all your international payment needs. Contact us via phone, email, or our
+  online form.">
+  <link rel="icon" type="image/png" href="./images/ico.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>euroExchange</title>
+  <link rel="stylesheet" href="./css/itc-custom-select.css">
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/login.css" rel="stylesheet">
+  <link href="./css/media.css" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body class="body">
+  <header class="header">
+  </header>
+  <div class="wrapper page-register2">
+    <div class="bg-map__left animate-fade-start" data-animate>
+      <img src="./images/main-bg.png" alt="decor" aria-hidden="true" width="1684" height="1042">
+    </div>
+    <div class="bg-map__righ animate-fade-start" data-animatet>
+      <img src="./images/main-bg.png" alt="decor" aria-hidden="true" width="1684" height="1042">
+    </div>
+    <main class="main">
+      <div class="bg-logo animate-fade-start" data-animate>
+        <img src="./images/bg-logo.png" alt="decor" aria-hidden="true" width="400" height="66">
+      </div>
+      <div class="decor-bg-2">
+        <img src="./images/decor-2.png" alt="decor" aria-hidden="true" width="1158" height="1158">
+      </div>
+      <div class="decor-bg-3">
+        <img src="./images/decor-3.png" alt="decor" aria-hidden="true" width="1068" height="1365">
+      </div>
+      <div class="decor-bg-2-mob">
+        <img src="./images/decor-2-mob.png" alt="decor" width="275" height="641">
+      </div>
+      <div class="decor-bg-3-mob">
+        <img src="./images/decor-3-mob.png" alt="decor" aria-hidden="true" width="305" height="620">
+      </div>
+
+      <section class="register">
+        <h1 class="reg-title animate-fade-start" data-animate>Apply for personal account</h1>
+        <div class="animate-fade-start" data-animate>
+          <a href="https://uchvuch.github.io/totalExChange/" class="logo">
+            <img src="./images/reg-logo2x.png" alt="To main page">
+          </a>
+        </div>
+        <div class="register__form animate-fade-start" data-animate>
+          <form class="reg-form">
+            <label class="reg-label" for="">
+              <div class="reg-input_title">Contact e-mail <span class="required-field">*</span></div>
+              <input class="reg-input" type="text">
+            </label>
+            <label class="reg-label" for="">
+              <div class="reg-input_title">Password <span class="required-field">*</span></div>
+              <input class="reg-input" type="text">
+            </label>
+            <label class="reg-label" for="">
+              <div class="reg-input_title">Confirm password <span class="required-field">*</span></div>
+              <input class="reg-input" type="text">
+            </label>
+            <label class="reg-label" for="">
+              <div class="reg-input_title">Login authentication method</div>
+              <div class="itc-select" id="loginMehod">
+                <button type="button" class="itc-select__toggle reg-input" name="login method" value="n/a"
+                  data-select="toggle" data-index="0">N/A</button>
+                <div class="itc-select__dropdown">
+                  <ul class="itc-select__options">
+                    <li class="itc-select__option itc-select__option_selected" data-select="option" data-value="n/a"
+                      data-index="0">N/A</li>
+                    <li class="itc-select__option" data-select="option" data-value="n/v" data-index="1">N/V</li>
+                  </ul>
+                </div>
+              </div>
+            </label>
+            <label class="reg-label" for="">
+              <div class="reg-input_title">First authentication method <span class="reg-hint">?</span></div>
+              <div class="itc-select" id="firstAuthenticationMethod">
+                <button type="button" class="itc-select__toggle reg-input" name="first auth method" value="sms"
+                  data-select="toggle" data-index="0">One time password received via SMS</button>
+                <div class="itc-select__dropdown">
+                  <ul class="itc-select__options">
+                    <li class="itc-select__option itc-select__option_selected" data-select="option" data-value="sms"
+                      data-index="0">One time password received via SMS</li>
+                    <li class="itc-select__option" data-select="option" data-value="email" data-index="1">One time password received via email</li>
+                  </ul>
+                </div>
+              </div>
+            </label>
+            <label class="reg-label" for="">
+              <div class="reg-input_title">Second authentication method <span class="reg-hint">?</span></div>
+              <div class="itc-select" id="secondAuthenticationMethod">
+                <button type="button" class="itc-select__toggle reg-input" name="second auth method" value="payment password"
+                  data-select="toggle" data-index="0">Payment password</button>
+                <div class="itc-select__dropdown">
+                  <ul class="itc-select__options">
+                    <li class="itc-select__option itc-select__option_selected" data-select="option" data-value="payment password"
+                      data-index="0">Payment password</li>
+                    <li class="itc-select__option" data-select="option" data-value="email password" data-index="1">Email password</li>
+                  </ul>
+                </div>
+              </div>
+            </label>
+            <div class="register__form-buttons">
+              <button class="register__form-button button-next">NEXT</button>
+              <a class="register__form-link" href="register-personal.html">Apply for personal account</a>
+              <a class="register__form-link" href="register-corporate.html">Apply for corporate account</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer animate-fade-start" data-animate>
+      <div class="footer__copyright container">
+        <span>© 2023 Euro Exchange Securities UK Ltd. All Rights Reserved</span>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/itc-custom-select.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+
+</html>
