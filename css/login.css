@@ -398,12 +398,12 @@ img {
 	padding-block: 18px;
 	border-radius: 15px;
 	background: linear-gradient(273deg, #950B12 2.78%, #E2373F 102.26%);
-	transition: background 0.3s ease;
+	transition: background 0.4s ease-in;
 }
 
 .button-next:hover {
 	background: linear-gradient(273deg, #c40f18 2.78%, #fa3c46 102.26%);
-	transition: background 0.3s ease;
+	transition: background 0.4s ease-in;
 }
 
 .register__form-link {
@@ -418,12 +418,12 @@ img {
 	width: 45%;
 	background: linear-gradient(273deg, #173482 2.78%, #11265C 102.26%);
 	padding: 10px 17px 9px 17px;
-	transition: background 0.3s ease;
+	transition: background 0.4s ease-in;
 }
 
 .register__form-link:hover {
 	background: linear-gradient(273deg, #1f46b1 2.78%, #1c3e92 102.26%);
-	transition: background 0.3s ease;
+	transition: background 0.4s ease-in;
 }
 
 .register__form-link:not(:last-child) {
